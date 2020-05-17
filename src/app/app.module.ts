@@ -8,15 +8,23 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { HeaderComponent } from './components/header/header.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent, ProductDetailsComponent],
+  declarations: [
+    AppComponent,
+    HomePageComponent,
+    ProductDetailsComponent,
+    HeaderComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
